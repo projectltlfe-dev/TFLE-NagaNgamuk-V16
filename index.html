@@ -359,6 +359,59 @@ input{font-family:inherit;-webkit-user-select:text;user-select:text}
 .recap div i{flex:none;font-style:normal;width:20px;height:20px;border-radius:50%;background:#FFC93C;color:#3A140C;display:grid;place-items:center;font:900 11px var(--fb);margin-top:1px}
 .recap div b{color:#fff}
 
+
+/* ---------- ORBI ---------- */
+.orbi{position:relative;display:block;width:100%;height:100%}.orbi svg{width:100%;height:100%;display:block;overflow:visible}
+.orbi .om{display:none}
+.orbi[data-mood=smile] .om-smile,.orbi[data-mood=grin] .om-grin,.orbi[data-mood=cheer] .om-grin,.orbi[data-mood=worry] .om-worry{display:inline}
+.orbi.talking .om{display:none!important}.orbi.talking .om-talk{display:inline!important}
+.orbi .om-talk{transform-box:fill-box;transform-origin:50% 30%;animation:otalk .2s ease-in-out infinite alternate}
+@keyframes otalk{to{transform:scaleY(.45)}}
+.orbi .oe{transform-box:fill-box;transform-origin:50% 50%;animation:oblink 4.5s infinite}
+@keyframes oblink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.orbi .ob{transform-box:view-box;transform-origin:100px 200px;animation:obob 2.4s ease-in-out infinite}
+@keyframes obob{50%{transform:scale(1.03,.97)}}
+.orbi .ostar{transform-box:fill-box;transform-origin:center;animation:ostar 1.4s ease-in-out infinite alternate}
+@keyframes ostar{to{transform:scale(1.3) rotate(25deg);filter:brightness(1.35)}}
+.odlg{position:absolute;inset:0;z-index:31}
+.obd{position:absolute;inset:0;background:rgba(18,5,2,.58);backdrop-filter:blur(2px)}.obd.lt{background:rgba(18,5,2,.18);backdrop-filter:none}
+.ocard{position:absolute;left:50%;top:62px;transform:translateX(-50%);width:min(330px,calc(100% - 24px))}
+.obox{position:absolute;left:0;right:0;bottom:24px;margin:0 auto;width:min(470px,calc(100% - 14px));display:flex;align-items:flex-end}
+.oav{flex:none;width:88px;height:98px;margin:0 -8px -6px 0;position:relative;z-index:2;filter:drop-shadow(0 6px 0 rgba(0,0,0,.25))}
+.otx{position:relative;flex:1;min-width:0;min-height:98px;padding:18px 14px 12px;background:linear-gradient(#FFF3D8,#F6DBA4);border:4px solid var(--brown);border-radius:18px;box-shadow:0 6px 0 var(--brownD),0 14px 30px rgba(0,0,0,.45);text-align:left}
+.onm{position:absolute;left:14px;top:-13px;font:900 11px var(--fb);letter-spacing:1.4px;color:#fff;background:#7A3FC2;padding:3px 12px;border-radius:99px;border:2px solid #fff}
+.otxt{font:800 15.5px/1.42 var(--fb);color:#4A2A18;min-height:44px}.otxt b{color:#B5320F}
+.onext{position:absolute;right:12px;bottom:6px;font-size:12px;color:#B5320F;opacity:0}.onext.on{opacity:1;animation:pulse .5s ease-in-out infinite alternate}
+.oextra .btn{margin-top:8px;height:44px;min-width:0;width:100%;font-size:18px}
+.okeys{font:800 10.5px var(--fb);color:#9A7356;margin-top:5px;text-align:center}
+.otoast{position:absolute;left:8px;top:84px;z-index:25;display:flex;align-items:flex-end;max-width:80%}
+.otoast .oav{width:44px;height:50px;margin:0 -4px 0 0}
+.otb{background:#fff;border:3px solid #7A3FC2;border-radius:12px;padding:5px 10px;font:800 12px/1.25 var(--fb);color:#3B1A5E;box-shadow:0 3px 0 rgba(0,0,0,.3)}
+.lcard{display:flex;align-items:center;gap:10px;background:linear-gradient(#FFF3D8,#F6DBA4);border:4px solid var(--brown);border-radius:18px;padding:10px 12px;box-shadow:0 6px 0 var(--brownD);text-align:left}
+.lcard .badgeimg{flex:none;width:58px;height:64px;margin:0}.lcard .lt{font:22px/1 var(--fd);color:#C2380F}.lcard .tag{margin-bottom:4px}
+.lcard .ls2{font:800 12px/1.3 var(--fb);color:#6B4A30;margin-top:3px}
+.mchips{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mch{background:linear-gradient(#FFF3D8,#F6DBA4);border:3px solid var(--brown);border-radius:14px;padding:8px 4px;text-align:center;box-shadow:0 4px 0 var(--brownD)}
+.mch .ic{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 4px;border-radius:12px;background:#3A140C}.mch .ic svg{width:34px;height:34px}
+.mch b{font:13px/1.05 var(--fd);color:#B5320F;font-weight:400;display:block}
+.demo{position:relative;width:100%;height:176px;border-radius:18px;border:4px solid var(--brown);overflow:hidden;background:linear-gradient(#2A0D09,#7A2A14);box-shadow:0 6px 0 var(--brownD)}
+.demo>*{position:absolute;left:0;top:0}
+.demo .di{width:38px;height:38px}.demo .di svg{width:100%;height:100%;display:block}
+.dcap{left:0;right:0;top:7px;height:24px}.dcap span{position:absolute;left:0;right:0;text-align:center;font:900 13.5px var(--fb);color:#FFE7C2;opacity:0;text-shadow:0 2px 0 #000}
+.demo>.dpop{font:21px var(--fd);white-space:nowrap;text-shadow:0 2px 0 #3B0F04,2px 0 0 #3B0F04,-2px 0 0 #3B0F04,0 -2px 0 #3B0F04;opacity:0}
+.dfin{font-size:26px;line-height:1;filter:drop-shadow(0 3px 2px rgba(0,0,0,.5))}
+.dlane{left:10px!important;top:126px!important;width:280px;height:44px;border-radius:22px;background:rgba(28,9,5,.9);border:3px solid rgba(255,201,60,.6)}
+.dring{width:36px;height:36px;border-radius:50%;border:3px solid #FFF3D8;box-shadow:0 0 12px rgba(255,201,60,.9)}
+.dslot{width:44px;height:44px;border:3px solid #41E3FF;border-radius:12px;background:rgba(10,40,60,.5);box-shadow:0 0 8px #41E3FF}
+.dcard{width:44px;height:44px;border-radius:11px;background:linear-gradient(#FFF7E6,#F6DBA4);border:3px solid #8A5526;display:grid;place-items:center}.dcard svg{width:32px;height:32px}
+.dord{left:8px!important;top:34px!important;width:132px;height:46px;border-radius:12px;background:#FFFDF6;border:3px solid var(--brown);display:flex;align-items:center;justify-content:center;gap:4px}
+.dord svg{width:30px;height:30px}.dord small{position:absolute;top:-1px;left:8px;font:900 8px var(--fb);letter-spacing:1px;color:#9A7356}
+.card.hint{border-color:#FFD23F;animation:hintp .5s ease-in-out infinite alternate}
+@keyframes hintp{to{box-shadow:0 0 0 4px #FFD23F,0 0 20px #FFD23F;transform:scale(1.06)}}
+.ohb{position:absolute;z-index:9;pointer-events:auto;font:900 12px var(--fb);color:#fff;background:linear-gradient(#B57CFF,#7A3FC2);border-radius:99px;padding:7px 12px;box-shadow:0 3px 0 #4B2284;border:2px solid #fff;transition:opacity .3s}
+.ohint{display:flex;align-items:center;gap:8px;text-align:left;margin:2px 0 8px}.ohint .oav2{flex:none;width:46px;height:50px}
+.ohint>span+span{font:800 12.5px/1.3 var(--fb);color:#7A5236}.ohint b{color:#7A3FC2}
+
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
 </style>
 </head>
@@ -1404,6 +1457,140 @@ const Snd = (() => {
     w.remove();
   }
 
+  /* ================= ORBI — pemandu ================= */
+  const ostar = (x, y, r) => { const p = (a, b) => `${(x + a * r).toFixed(1)} ${(y + b * r).toFixed(1)}`; return `<g class="ostar"><path d="M${p(0, -1)}L${p(.28, -.28)}L${p(1, 0)}L${p(.28, .28)}L${p(0, 1)}L${p(-.28, .28)}L${p(-1, 0)}L${p(-.28, -.28)}Z" fill="#FF9A2E" stroke="#B5520A" stroke-width="2" stroke-linejoin="round"/><circle cx="${x}" cy="${y}" r="${(r * .2).toFixed(1)}" fill="#FFE9A8"/></g>`; };
+  function orbi(m = 'smile') {
+    const I = '#2B1840';
+    return `<div class="orbi" data-mood="${m}"><svg viewBox="0 0 200 220"><g class="ob">
+      <ellipse cx="100" cy="211" rx="56" ry="7" fill="rgba(0,0,0,.28)"/>
+      <path d="M58 176Q50 204 70 208L94 208Q100 190 92 176Z" fill="#3C5A99" stroke="${I}" stroke-width="4" stroke-linejoin="round"/><path d="M142 176Q150 204 130 208L106 208Q100 190 108 176Z" fill="#3C5A99" stroke="${I}" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M30 112Q8 118 12 150Q16 166 34 160Q44 140 44 118Z" fill="#6A3FAE" stroke="${I}" stroke-width="4" stroke-linejoin="round"/><path d="M170 112Q192 118 188 150Q184 166 166 160Q156 140 156 118Z" fill="#6A3FAE" stroke="${I}" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M100 12L146 22L180 58L188 106L174 152L140 184L100 190L60 184L26 152L12 106L20 58L54 22Z" fill="#7B4BBF" stroke="${I}" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M54 22L100 12L146 22L180 58L156 50L128 46L100 54L72 46L44 50L20 58Z" fill="#3FA7A3" stroke="${I}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M12 106L20 58L36 62L34 104Z M188 106L180 58L164 62L166 104Z" fill="#2A7C86" stroke="${I}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M44 50L56 80M156 50L148 78M100 54L100 68M60 184L70 160M140 184L128 162" stroke="${I}" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+      ${ostar(52, 54, 13)}${ostar(148, 46, 15)}${ostar(144, 134, 24)}${ostar(52, 152, 12)}
+      <circle cx="58" cy="124" r="7" fill="#FF8FC7" opacity=".45"/><circle cx="142" cy="124" r="7" fill="#FF8FC7" opacity=".45"/>
+      <g class="oe"><ellipse cx="76" cy="100" rx="20" ry="21" fill="#FFF8E0" stroke="${I}" stroke-width="4"/><circle cx="79" cy="102" r="11" fill="#1B1030"/><circle cx="74" cy="97" r="4" fill="#fff"/></g>
+      <g class="oe"><ellipse cx="126" cy="100" rx="20" ry="21" fill="#FFF8E0" stroke="${I}" stroke-width="4"/><circle cx="123" cy="102" r="11" fill="#1B1030"/><circle cx="118" cy="97" r="4" fill="#fff"/></g>
+      <path class="om om-smile" d="M90 138Q100 148 110 138" stroke="${I}" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <g class="om om-grin"><path d="M86 134Q100 160 114 134Z" fill="#5A1A2E" stroke="${I}" stroke-width="3" stroke-linejoin="round"/><ellipse cx="100" cy="147" rx="7" ry="4" fill="#FF8FA8"/></g>
+      <g class="om om-worry"><path d="M90 146Q95 137 100 143Q105 149 110 140" stroke="${I}" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M160 78Q168 90 160 96Q152 90 160 78Z" fill="#8FD8FF" stroke="${I}" stroke-width="2"/></g>
+      <ellipse class="om om-talk" cx="100" cy="141" rx="9" ry="8" fill="#5A1A2E" stroke="${I}" stroke-width="3"/>
+    </g></svg></div>`;
+  }
+  const pick = a => a[Math.floor(Math.random() * a.length)];
+  const Orbi = {
+    last: 0,
+    react(text, m = 'smile') {
+      const n = performance.now(); if (n - this.last < 3200 || !ui.isConnected) return; this.last = n;
+      const o = $('.otoast', ui); if (o) o.remove();
+      const e = h('div', 'otoast np', `<div class="oav">${orbi(m)}</div><div class="otb">${text}</div>`, ui);
+      e.animate([{ opacity: 0, transform: 'translateX(-30px)' }, { opacity: 1, transform: 'none', offset: .12 }, { opacity: 1, offset: .86 }, { opacity: 0 }], { duration: 2600 }).onfinish = () => e.remove(); SFX.pop();
+    },
+    say(lines, o = {}) {
+      return new Promise(async res => {
+        const w = h('div', 'odlg', `<div class="obd${o.dim === false ? ' lt' : ''}"></div><div class="ocard">${o.card || ''}</div><div class="obox"><div class="oav">${orbi('smile')}</div><div class="otx"><div class="onm">ORBI</div><div class="otxt"></div><div class="onext">▼</div><div class="oextra"></div></div></div>`, ui);
+        const cardEl = $('.ocard', w), orb = $('.orbi', w), tx = $('.otxt', w), nx = $('.onext', w), ex = $('.oextra', w);
+        if (o.demo) o.demo($('.demo', w));
+        w.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 250 });
+        $('.obox', w).animate([{ transform: 'translateY(60px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, easing: 'cubic-bezier(.34,1.56,.64,1)' });
+        let state = 'idle', skip = false, nextR = null, btnOn = false;
+        const tap = e => { if (e && e.target && e.target.closest && e.target.closest('button')) return; if (state === 'typing') skip = true; else if (state === 'wait' && nextR) { const n = nextR; nextR = null; SFX.click(); n(); } };
+        const kd = e => { if ((e.key === ' ' || e.key === 'Enter') && !btnOn) { e.preventDefault(); tap(); } };
+        w.addEventListener('click', tap); addEventListener('keydown', kd);
+        await sleep(380);
+        for (let i = 0; i < lines.length; i++) {
+          const L = typeof lines[i] === 'string' ? { t: lines[i] } : lines[i];
+          orb.dataset.mood = L.m || 'smile';
+          if (L.card) { cardEl.innerHTML = L.card; cardEl.animate([{ opacity: 0, transform: 'translateX(-50%) scale(.8)' }, { opacity: 1, transform: 'translateX(-50%)' }], { duration: 420, easing: 'cubic-bezier(.34,1.56,.64,1)' }); }
+          nx.classList.remove('on'); SFX.pop(); state = 'typing'; skip = false; orb.classList.add('talking');
+          const html = L.t; let k = 0;
+          while (k < html.length && !skip) {
+            if (html[k] === '<') { k = html.indexOf('>', k) + 1; continue; }
+            k += html.codePointAt(k) > 0xFFFF ? 2 : 1; tx.innerHTML = html.slice(0, k);
+            await sleep(/[.!?]/.test(html[k - 1]) && html[k] === ' ' ? 170 : 24);
+          }
+          tx.innerHTML = html; orb.classList.remove('talking');
+          if (i === lines.length - 1 && o.btn) {
+            state = 'idle'; ex.innerHTML = `<button class="btn green pulse">${o.btn}</button>` + (o.keys ? `<div class="okeys">${o.keys}</div>` : ''); btnOn = true;
+            await clickOnce($('.btn', ex));
+          } else { state = 'wait'; nx.classList.add('on'); await new Promise(r => nextR = r); }
+        }
+        removeEventListener('keydown', kd);
+        await w.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 220, fill: 'forwards' }).finished.catch(() => { });
+        w.remove(); res();
+      });
+    }
+  };
+
+  /* ================= DEMO ANIMASI TUTORIAL ================= */
+  const T = (x, y, s = 1) => `translate(${x}px,${y}px) translate(-50%,-50%) scale(${s})`;
+  const loopA = (el, fr, D) => el.animate(fr, { duration: D, iterations: Infinity });
+  function dcaps(r, list, cuts, D) {
+    const c = h('div', 'dcap', '', r);
+    list.forEach((t, k) => {
+      const e = h('span', '', t, c), a = cuts[k], b = cuts[k + 1] ?? 1, f = [{ offset: 0, opacity: a === 0 ? 1 : 0 }];
+      if (a > 0) f.push({ offset: a - .01, opacity: 0 }, { offset: a, opacity: 1 });
+      if (b < 1) f.push({ offset: b - .01, opacity: 1 }, { offset: b, opacity: 0 });
+      f.push({ offset: 1, opacity: b < 1 ? 0 : 1 }); loopA(e, f, D);
+    });
+  }
+  function dpop(r, txt, x, y, a, b, col, D) {
+    const e = h('div', 'dpop', txt, r); e.style.color = col;
+    loopA(e, [{ offset: 0, transform: T(x, y), opacity: 0 }, { offset: a, transform: T(x, y), opacity: 0 }, { offset: a + .02, transform: T(x, y), opacity: 1 }, { offset: b, transform: T(x, y - 30), opacity: 0 }, { offset: 1, transform: T(x, y - 30), opacity: 0 }], D);
+  }
+  function demo1(r) {
+    const D = 6000, O = (x, y, o) => ({ transform: T(x, y), opacity: o });
+    dcaps(r, ['❄️ Tangkap es!', '🌶️ Cabai? Menghindar!', '🥛 Susu = rage turun!'], [0, .34, .64], D);
+    const rb = h('div', '', '<i style="display:block;height:100%;background:#FF4A2A;border-radius:6px"></i>', r); rb.style.cssText = 'left:12px;top:36px;width:120px;height:12px;border:2px solid #0E0402;border-radius:8px;background:#2B0F0A;overflow:hidden';
+    const rl = h('div', '', '🔥 RAGE', r); rl.style.cssText = 'left:138px;top:34px;font:900 10px var(--fb);color:#FFE7C2';
+    loopA(rb.firstChild, [{ offset: 0, width: '100%' }, { offset: .3, width: '100%' }, { offset: .34, width: '86%' }, { offset: .9, width: '86%' }, { offset: .94, width: '58%' }, { offset: .99, width: '58%' }, { offset: 1, width: '100%' }], D);
+    const mk = svg => h('div', 'di', svg, r);
+    loopA(mk(ART.ice()), [{ offset: 0, ...O(70, 56, 0) }, { offset: .04, ...O(70, 58, 1) }, { offset: .3, ...O(70, 124, 1) }, { offset: .32, ...O(70, 128, 0) }, { offset: 1, ...O(70, 128, 0) }], D);
+    loopA(mk(ART.chili()), [{ offset: 0, ...O(150, 56, 0) }, { offset: .34, ...O(150, 56, 0) }, { offset: .36, ...O(150, 58, 1) }, { offset: .68, ...O(150, 176, 1) }, { offset: .7, ...O(150, 176, 0) }, { offset: 1, ...O(150, 176, 0) }], D);
+    loopA(mk(ART.milk()), [{ offset: 0, ...O(230, 56, 0) }, { offset: .62, ...O(230, 56, 0) }, { offset: .64, ...O(230, 58, 1) }, { offset: .9, ...O(230, 124, 1) }, { offset: .92, ...O(230, 128, 0) }, { offset: 1, ...O(230, 128, 0) }], D);
+    const c = h('div', 'chef', ART.chef() + '<span class="dfin" style="position:absolute;left:34px;top:66px">👆</span>', r); c.dataset.pose = 'basket'; c.dataset.face = 'grin'; c.style.cssText = 'width:54px;height:81px;overflow:visible';
+    loopA(c, [{ offset: 0, transform: T(70, 122) }, { offset: .4, transform: T(70, 122) }, { offset: .55, transform: T(230, 122) }, { offset: .96, transform: T(230, 122) }, { offset: 1, transform: T(70, 122) }], D);
+    dpop(r, '+50', 70, 104, .3, .46, '#9DF2FF', D); dpop(r, '+80', 230, 104, .9, 1, '#9DF2FF', D);
+  }
+  function demo2(r) {
+    const D = 3200;
+    dcaps(r, ['👀 Lihat ✦ meluncur', '👆 Ketuk pas di lingkaran!', '🐉 Naga ketawa geli!'], [0, .42, .66], D);
+    const mkD = (m, cool, fr) => { const e = h('div', '', miniDragon(m, cool), r); e.style.width = '96px'; loopA(e, fr, D); };
+    mkD('annoyed', false, [{ offset: 0, transform: T(150, 82), opacity: 1 }, { offset: .6, transform: T(150, 82), opacity: 1 }, { offset: .62, transform: T(150, 82), opacity: 0 }, { offset: 1, transform: T(150, 82), opacity: 0 }]);
+    mkD('giggle', true, [{ offset: 0, transform: T(150, 82), opacity: 0 }, { offset: .6, transform: T(150, 82), opacity: 0 }, { offset: .62, transform: T(150, 82), opacity: 1 }, { offset: .95, transform: T(150, 82), opacity: 1 }, { offset: 1, transform: T(150, 82), opacity: 0 }]);
+    h('div', 'dlane', '', r);
+    const ring = h('div', 'dring', '', r);
+    loopA(ring, [{ offset: 0, transform: T(44, 148) }, { offset: .56, transform: T(44, 148) }, { offset: .6, transform: T(44, 148, 1.3) }, { offset: .7, transform: T(44, 148) }, { offset: 1, transform: T(44, 148) }], D);
+    const n = h('div', 'di', ART.sparkleStar(), r); n.style.width = n.style.height = '30px';
+    loopA(n, [{ offset: 0, transform: T(264, 148), opacity: 0 }, { offset: .03, transform: T(256, 148), opacity: 1 }, { offset: .58, transform: T(44, 148), opacity: 1 }, { offset: .6, transform: T(44, 148, 1.9), opacity: 0 }, { offset: 1, transform: T(44, 148, 1.9), opacity: 0 }], D);
+    const f = h('div', 'dfin', '👇', r);
+    loopA(f, [{ offset: 0, transform: T(44, 100) }, { offset: .5, transform: T(44, 100) }, { offset: .6, transform: T(44, 122) }, { offset: .68, transform: T(44, 100) }, { offset: 1, transform: T(44, 100) }], D);
+    dpop(r, 'PERFECT!', 130, 112, .6, .88, '#FFD23F', D); dpop(r, '💖', 150, 40, .62, .92, '#fff', D);
+  }
+  function demo3(r) {
+    const D = 7600, A = (x, y, s, o = 1) => ({ transform: T(x, y, s), opacity: o });
+    dcaps(r, ['📋 Baca pesanan', '🖐 Seret bahan yang tepat', '🙅 Pengecoh? Jangan!', '🍡 Jadi! Naga nyam~'], [0, .07, .46, .8], D);
+    h('div', 'dord', '<small>PESANAN</small>' + ['madu', 'mint', 'marsh'].map(k => ART.ingredient(k)).join(''), r);
+    [176, 222, 268].forEach(x => { const e = h('div', 'dslot', '', r); e.style.transform = T(x, 56); });
+    const sh = [['madu', 40], ['cabai', 110], ['mint', 180], ['marsh', 250]];
+    const ghosts = { madu: [176, .08, .2], mint: [222, .28, .4], marsh: [268, .66, .78] };
+    sh.forEach(([k, x0]) => {
+      const c = h('div', 'dcard', ART.ingredient(k), r), g = ghosts[k];
+      if (!g) { loopA(c, [{ offset: 0, transform: T(x0, 124) }, { offset: .5, transform: T(x0, 124) }, { offset: .52, transform: T(x0 - 6, 124) }, { offset: .54, transform: T(x0 + 6, 124) }, { offset: .56, transform: T(x0 - 4, 124) }, { offset: .58, transform: T(x0, 124) }, { offset: 1, transform: T(x0, 124) }], D); return; }
+      const [x1, s, e] = g;
+      loopA(c, [{ offset: 0, ...A(x0, 124, 1, 1) }, { offset: s, ...A(x0, 124, 1, 1) }, { offset: s + .005, ...A(x0, 124, 1, 0) }, { offset: .985, ...A(x0, 124, 1, 0) }, { offset: 1, ...A(x0, 124, 1, 1) }], D);
+      const gh = h('div', 'dcard', ART.ingredient(k), r); gh.style.borderColor = '#8CF5A8';
+      loopA(gh, [{ offset: 0, ...A(x0, 124, 1, 0) }, { offset: s, ...A(x0, 124, 1, 0) }, { offset: s + .005, ...A(x0, 124, 1.1, 1) }, { offset: e, ...A(x1, 56, 1, 1) }, { offset: .84, ...A(x1, 56, 1, 1) }, { offset: .88, ...A(x1, 56, 1.25, 1) }, { offset: .93, ...A(x1, 56, 1, 1) }, { offset: .97, ...A(x1, 56, 1, 1) }, { offset: 1, ...A(x1, 56, 1, 0) }], D);
+    });
+    const f = h('div', 'dfin', '👆', r);
+    const P = [[0, 40, 172, 0], [.05, 48, 152, 1], [.08, 48, 152, 1], [.2, 186, 84, 1], [.25, 188, 152, 1], [.28, 188, 152, 1], [.4, 232, 84, 1], [.46, 118, 152, 1], [.5, 118, 146, 1], [.56, 118, 152, 1], [.62, 258, 152, 1], [.66, 258, 152, 1], [.78, 278, 84, 1], [.86, 278, 84, 1], [.9, 278, 84, 0], [1, 278, 84, 0]];
+    loopA(f, P.map(([o, x, y, op]) => ({ offset: o, transform: T(x, y), opacity: op })), D);
+    dpop(r, 'Bukan itu!', 110, 100, .5, .68, '#FF8A70', D); dpop(r, 'NYAM! 😍', 222, 100, .84, .99, '#8CF5A8', D);
+  }
+  const DEMOS = [demo1, demo2, demo3];
+
   /* ================= KONTEN ================= */
   const MISSIONS = [
     { name: 'Chili Catching Madness', ic: () => ART.chili(false), desc: 'Tangkap penawar, hindari cabai api' },
@@ -1425,20 +1612,21 @@ const Snd = (() => {
       tips: ['Hindari "bahan pengecoh": solusi cepat tapi tidak nyambung.', 'Eksekusi sampai tuntas — tutup dengan sentuhan yang manis.'] }
   ];
 
+  const LSAY = [
+    n => [`Mantap, <b>${n}</b>! Naganya udah adem 😌`, `Pas situasi panas, <b>redam sumber panasnya dulu</b>. Bukan nyari siapa yang salah.`, `Hindari "cabai": defensif, saling nyalahin, janji asal.`],
+    n => [`Wih, ritmenya dapet! 🎶`, `Ngademin orang marah itu soal <b>timing</b>: jangan nyerobot, jangan dicuekin.`, `Dengerin dulu sampai selesai, baru tawarin solusi.`],
+    n => [`Gila, camilannya pas banget! 🍡`, `Tutup masalah dengan <b>solusi tepat sasaran</b> dan eksekusi rapi.`, `Hasilnya? Yang tadinya marah bisa balik jadi fans kamu ✨`]
+  ];
   async function lesson(i) {
     const L = LESSONS[i];
-    const md = modal(`<div class="lhead"><div class="badgeimg">${ART.badge(L.icon())}</div><div><span class="tag ${L.tag}">NILAI MISI ${i + 1}</span><div class="lt">${L.title}</div></div></div>
-      <div class="ls">${L.sub}</div><p>${L.body(NM())}</p>
-      <div class="tips"><div class="h">COBA TERAPKAN DI TEMPAT KERJA</div>${L.tips.map(t => `<div><i>✓</i><span>${t}</span></div>`).join('')}</div>
-      <button class="btn">${i < 2 ? 'Lanjut ke Misi ' + (i + 2) + ' ▶' : 'Lihat Hasil Akhir ▶'}</button>`, { pcls: 'lesson' });
-    await clickOnce(md.p.querySelector('.btn'));
-    await md.close();
+    await Orbi.say(LSAY[i](NM()).map((t, k) => ({ t, m: k === 0 ? 'cheer' : 'smile' })), {
+      card: `<div class="lcard"><div class="badgeimg">${ART.badge(L.icon())}</div><div><span class="tag ${L.tag}">NILAI MISI ${i + 1}</span><div class="lt">${L.title}</div><div class="ls2">${L.sub}</div></div></div>`,
+      btn: i < 2 ? 'Lanjut ke Misi ' + (i + 2) + ' ▶' : 'Lihat Hasil Akhir ▶'
+    });
   }
   async function fail(html) {
     SFX.fail();
-    const md = modal(`<div class="face">${miniDragon('angry', false)}</div><h2>Waduh, Chef ${NM()}!</h2><p style="margin-top:8px">${html}</p><button class="btn">↺ Coba Lagi</button>`);
-    await clickOnce(md.p.querySelector('.btn'));
-    await md.close();
+    await Orbi.say([{ t: `Waduh, ${NM()}! ${html}`, m: 'worry' }], { btn: '↺ Coba Lagi' });
   }
 
   /* ================= TATA LETAK ADEGAN ================= */
@@ -1496,6 +1684,7 @@ const Snd = (() => {
       if (wide) { const cw = 92, tw = cw * 6 + 8 * 5; Object.assign(sh.style, { left: (LW - tw) / 2 + 'px', top: shelfTop + 'px', width: tw + 'px', gridTemplateColumns: `repeat(6,${cw}px)`, gridAutoRows: '92px' }); }
       else { Object.assign(sh.style, { left: '14px', top: shelfTop + 'px', width: (LW - 28) + 'px', gridTemplateColumns: 'repeat(3,1fr)', gridAutoRows: '64px' }); }
       if (M3.ptimer) M3.ptimer.style.top = (slotTop - 26) + 'px';
+      if (M3.hint) Object.assign(M3.hint.style, { top: (slotTop - 36) + 'px', right: '10px' });
       if (M3.ptimer) M3.ptimer.style.left = slotCx + 'px';
     },
     final() {
@@ -1507,7 +1696,7 @@ const Snd = (() => {
   hooks.add(() => { const f = LAYOUTS[SCENE]; if (f) f(); });
   function setScene(k) {
     SCENE = k; props.innerHTML = ''; props0.innerHTML = ''; itemsL.innerHTML = ''; fx.innerHTML = '';
-    R2.lane = R2.ring = R2.rock = R2.combo = R2.hint = null; M3.order = null; M3.slots = []; M3.shelf = null; M3.ptimer = null;
+    R2.lane = R2.ring = R2.rock = R2.combo = R2.hint = null; M3.order = null; M3.slots = []; M3.shelf = null; M3.ptimer = null; M3.hint = null;
     world.classList.toggle('cool', k === 'final');
     drgEl.className = 'drg'; chefEl.className = 'chef'; chefEl.style.removeProperty('--fr'); Chef.lean(0);
     LAYOUTS[k]();
@@ -1537,7 +1726,7 @@ const Snd = (() => {
       const s = h('div', 'start', '', ui);
       s.innerHTML = `<div class="logo"><span class="l1">NAGA</span><span class="l2">NGAMUK</span><span class="sub">Jangan Dibakar!</span></div>
         <div class="scard"><label for="nm">Halo, Chef! Siapa namamu?</label>
-        <div class="hint">Naga penjaga gunung lagi ngamuk — cuma kamu yang bisa menenangkannya!</div>
+        <div class="ohint"><span class="oav2">${orbi('grin')}</span><span>Psst! Aku <b>Orbi</b>. Naga lagi ngamuk — bantuin yuk!</span></div>
         <input id="nm" maxlength="18" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="Tulis nama panggilanmu..." enterkeyhint="go" aria-label="Nama kamu">
         <button class="btn" id="goBtn" disabled>🔥 Mulai Petualangan</button>
         <div class="snd">🎧 Nyalakan suara biar makin seru (tombol BGM di pojok kanan atas)</div></div>`;
@@ -1565,39 +1754,26 @@ const Snd = (() => {
   async function intro() {
     music('menu');
     Drg.fx('hurt', 450); SFX.roar(); fireCough();
-    const md = modal(`<div class="face">${miniDragon('angry', false)}</div>
-      <span class="tag">GAWAT, CHEF ${NM().toUpperCase()}!</span>
-      <p>Sang <b>Naga penjaga Gunung Api</b> lagi <b>NGAMUK</b>! 🔥 Ada yang iseng melempar cabai beracun ke sarangnya. Kalau dibiarkan, dapur istana bisa ikut dibakar!</p>
-      <p style="margin-top:6px">Redakan amarahnya lewat <b>3 misi</b> ini:</p>
-      <div class="mlist">${MISSIONS.map((m, i) => `<div class="mi"><span class="ic">${m.ic()}</span><div><b>${i + 1}. ${m.name}</b><small>${m.desc}</small></div></div>`).join('')}</div>
-      <button class="btn">Siap, Laksanakan! 🔥</button>`);
-    await clickOnce(md.p.querySelector('.btn'));
-    await md.close();
+    const chips = `<div class="mchips">${['Chili Catching', 'Tickle Rhythm', 'Magic Marshmallow'].map((n, i) => `<div class="mch"><span class="ic">${MISSIONS[i].ic()}</span><b>${n}</b></div>`).join('')}</div>`;
+    await Orbi.say([
+      { t: `Woy, <b>${NM()}</b>! Sini sini! 👋`, m: 'grin' },
+      `Aku <b>Orbi</b>, batu ajaib penjaga Gunung Api ini.`,
+      { t: `Liat tuh... si <b>Naga</b> ngamuk parah! 🔥 Ada yang iseng lempar cabai beracun ke sarangnya.`, m: 'worry' },
+      `Kalau dibiarin, dapur istana ikut gosong. Cuma kamu yang bisa nenangin dia!`,
+      { t: `Ada <b>3 misi</b>. Santai, aku yang pandu!`, m: 'grin', card: chips }
+    ], { btn: 'Siap, Orbi! 🔥', dim: false });
   }
   function brief(i) {
     const N = NM();
     const B = [
-      { title: 'Chili Catching Madness', story: `Cabai api beracun berjatuhan dari langit dan bikin Naga makin kepanasan! Bantu dia, Chef <b>${N}</b>.`,
-        how: [[`<div class="chef" data-pose="basket" data-face="grin" style="width:34px">${ART.chef()}</div>`, 'Geser', 'keranjang kiri–kanan', ''], [ART.ice() + ART.milk(), 'Tangkap', 'es batu & susu', 'good'], [ART.chili(), 'Hindari', 'cabai api', 'bad']],
-        goal: '🎯 Turunkan <b>RAGE METER</b> sampai <b>CALM</b> sebelum <b>30 detik</b> habis.',
-        keys: 'Geser jari / mouse di layar · Keyboard: ← →' },
-      { title: 'Tickle Rhythm', story: `Naga duduk bersidekap sambil cemberut. Gelitik dagunya pakai bulu ayam raksasa — tapi harus <b>pas di ketukan</b>, Chef <b>${N}</b>!`,
-        how: [[ART.sparkleStar(), 'Lihat', '✦ meluncur ke lingkaran', ''], [ART.featherIcon(), 'Ketuk', 'tepat saat ✦ di lingkaran', 'good'], [`<div style="width:44px">${miniDragon('annoyed', false)}</div>`, 'Jangan', 'terlalu cepat / lambat', 'bad']],
-        goal: '🎯 Ikuti irama sampai lagu selesai dan bawa <b>RAGE METER</b> turun ke zona aman (<b>≤ 40</b>).',
-        keys: 'Ketuk layar di mana saja · Keyboard: Spasi' },
-      { title: 'The Magic Marshmallow Puzzle', story: `Naga sudah tenang, tapi masih <b>manyun</b> menunggu camilan pengganti. Racik 3 bahan rasa yang tepat ke tungku sihir, Chef <b>${N}</b>!`,
-        how: [[ART.ingredient('madu') + ART.ingredient('mint'), 'Baca', 'pesanan naga', ''], [ART.ingredient('marsh'), 'Seret / ketuk', '3 bahan yang tepat', 'good'], [ART.ingredient('cabai'), 'Hindari', 'bahan pengecoh', 'bad']],
-        goal: '🎯 Selesaikan <b>3 pesanan</b>. Pesanan terakhir: <b>KILAT 3 DETIK!</b> ⚡',
-        keys: 'Seret bahan ke tungku, atau cukup ketuk bahannya · Keyboard: 1–6' }
+      { l: [{ t: `<b>Misi 1: Chili Catching!</b> 🌶️ Cabai api berjatuhan dari langit, Chef <b>${N}</b>!`, m: 'worry' }, `Geser keranjang, tangkep <b>❄️ es</b> & <b>🥛 susu</b>. Jangan sentuh cabai!`, `Rage Meter harus <b>CALM</b> sebelum 30 detik. Awas, di tengah ada <b>🌋 Hujan Cabai</b>!`], k: 'Geser jari / mouse · Keyboard: ← →' },
+      { l: [`<b>Misi 2: Tickle Rhythm!</b> 🪶 Naga lagi duduk cemberut sambil sidekap.`, `Gelitik dagunya pakai bulu raksasa. Ketuk pas <b>✦</b> masuk lingkaran!`, { t: `Ritme tepat = Rage turun ≤ <b>40</b>. Combo 10 = skor x2 🔥`, m: 'grin' }], k: 'Ketuk layar di mana saja · Keyboard: Spasi' },
+      { l: [`<b>Misi 3: Magic Marshmallow!</b> 🍡 Naga udah adem, tapi masih manyun.`, `Baca pesanannya, seret <b>3 bahan</b> yang tepat ke tungku. Awas bahan pengecoh!`, { t: `Bingung? Colek aku lewat <b>💡 Minta Orbi</b> (1x per pesanan, -50 poin).`, m: 'grin' }, { t: `Pesanan terakhir <b>KILAT 3 detik</b> ⚡ Fokus ya!`, m: 'worry' }], k: 'Seret bahan ke tungku, atau ketuk bahannya · Keyboard: 1–6' }
     ][i];
-    const md = modal(`<span class="tag ${['', 'blue', 'purple'][i]}">MISI ${i + 1} DARI 3</span><h2>${B.title}</h2><p style="margin-top:6px">${B.story}</p>
-      <div class="how">${B.how.map(([ic, b, s, c]) => `<div class="hw ${c}"><div class="ic">${ic}</div><b>${b}</b><small>${s}</small></div>`).join('')}</div>
-      <div class="goal">${B.goal}</div><div class="keys">${B.keys}</div><button class="btn">Mulai! ▶</button>`);
-    md.p.querySelectorAll('.hw').forEach((e, k) => e.animate([{ opacity: 0, transform: 'translateY(20px) scale(.85)' }, { opacity: 1, transform: 'none' }], { duration: 450, delay: 200 + k * 110, easing: 'cubic-bezier(.34,1.56,.64,1)', fill: 'backwards' }));
-    return clickOnce(md.p.querySelector('.btn')).then(() => md.close());
+    return Orbi.say(B.l, { card: '<div class="demo"></div>', demo: DEMOS[i], btn: 'Mulai! ▶', keys: B.k });
   }
 
-  /* =====================================================================
+    /* =====================================================================
      MISI 1 — CHILI CATCHING MADNESS
      ===================================================================== */
   function moodByRage1(r) { if (r > 60) Drg.set('angry', 'cross'); else if (r > 25) Drg.set('annoyed', 'cross'); else Drg.set('smile', 'rest'); }
@@ -1615,7 +1791,7 @@ const Snd = (() => {
       if (res.win) break;
       Chef.face('oops'); Drg.force('angry'); Drg.fx('hurt'); SFX.roar();
       await sleep(700);
-      await fail('Waktu habis dan Naga masih kepanasan! 🔥 Ingat: fokus tangkap <b>es & susu</b>, jangan malah menangkap <b>cabai</b> yang memperkeruh keadaan.');
+      await fail('Waktu habis, Naga masih panas! 🔥 Fokus tangkep <b>es & susu</b>, hindari <b>cabai</b> ya.');
       setRage(100); Drg.force('angry'); Drg.set(null, 'cross'); Chef.set('basket', 'focus'); HUD.time(30, 30); HUD.score(total());
     }
     /* menang */
@@ -1655,7 +1831,7 @@ const Snd = (() => {
         const p = st.el / DUR; let type;
         if (st.chill > 0) type = Math.random() < .3 ? 'milk' : 'ice';
         else if (st.orbs < 2 && st.el > 7 && st.rage > 30 && Math.random() < .07) { type = 'orb'; st.orbs++; }
-        else { const r = Math.random(), pc = .36 + p * .12; type = r < pc ? 'chili' : r < pc + .17 ? 'milk' : 'ice'; }
+        else { const r = Math.random(), pc = .36 + p * .12 + (st.storm > 0 ? .3 : 0); type = r < pc ? 'chili' : r < pc + .17 ? 'milk' : 'ice'; }
         let x = 0; for (let k = 0; k < 8; k++) { x = rand(30, LW - 30); if (Math.abs(x - st.lastX) > 80) break; }
         st.lastX = x;
         const el = h('div', 'item' + (type === 'orb' ? ' orb big' : '') + (type === 'chili' ? ' big' : ''), ART[type](), itemsL);
@@ -1668,7 +1844,7 @@ const Snd = (() => {
         if (it.type === 'chili') {
           st.rage = Math.min(100, st.rage + 12); st.combo = 0; st.chili++;
           SFX.chili(); setTimeout(() => SFX.roar(), 140);
-          Chef.face('oops', 750); bubble(Chef.x + 18, Chef.top() + 10, 'OOPS!');
+          Chef.face('oops', 750); bubble(Chef.x + 18, Chef.top() + 10, 'OOPS!'); Orbi.react(pick(['Aduh, panas! Awas cabai 🌶️', 'Eits, itu cabai!', 'Jangan ditangkep, Chef!']), 'worry');
           upd(); Drg.flash('angry', 900); Drg.fx('hurt', 450); fireCough(); shake(9); flashTint('#FF3B1A', .28);
           pop(b.x, b.y - 30, '+12 🔥', 'bad');
           return;
@@ -1685,7 +1861,7 @@ const Snd = (() => {
         pop(b.x, b.y - 28, '+' + pts, 'good');
         sparks(b.x, b.y, 5, 40, '#CFF6FF');
         if (st.combo === 5 || st.combo === 10 || (st.combo > 10 && st.combo % 5 === 0)) { SFX.combo(mult); pop(LW / 2, 300, `COMBO x${mult}!`, 'gold huge', { dur: 1100, dy: -40 }); }
-        Chef.face('grin', 400, 'focus');
+        Chef.face('grin', 400, 'focus'); if (st.combo === 5) Orbi.react('Combo! Jago banget 🔥', 'grin'); if (st.rage > 0 && st.rage < 25 && !st.near) { st.near = 1; Orbi.react('Dikit lagi CALM! 💪', 'grin'); }
         HUD.score(total() + st.score); upd();
         if (Math.random() < .5) nostrils('steam');
       }
@@ -1696,13 +1872,14 @@ const Snd = (() => {
       }
       const f = dt => {
         if (st.done) return;
-        st.el += dt; st.t -= dt; if (st.chill > 0) st.chill -= dt;
+        st.el += dt; st.t -= dt; if (st.chill > 0) st.chill -= dt; if (st.storm > 0) st.storm -= dt;
+        if (!st.stormed && st.el > 13) { st.stormed = true; st.storm = 4; flashWord('HUJAN CABAI!', 1100, 44); SFX.roar(); flashTint('#FF3B1A', .25, 600); shake(6); Orbi.react('Awas hujan cabai! Fokus!', 'worry'); }
         if (st.kl || st.kr) st.tx = Chef.x + (st.kr - st.kl) * 90;
         const hw = Chef.w / 2; st.tx = clamp(st.tx, hw, LW - hw);
         const mx = 820 * dt, dx = clamp(st.tx - Chef.x, -mx, mx);
         Chef.move(Chef.x + dx); Chef.lean(clamp(dx / Math.max(dt, .001) / 820 * 9, -9, 9));
         st.spawn -= dt;
-        if (st.spawn <= 0) { spawn(); st.spawn = st.chill > 0 ? .2 : (.62 - .2 * (st.el / DUR)) * rand(.85, 1.15); }
+        if (st.spawn <= 0) { spawn(); st.spawn = st.chill > 0 ? .2 : (.62 - .2 * (st.el / DUR)) * rand(.85, 1.15) * (st.storm > 0 ? .6 : 1); }
         const cy = Chef.pt(60, 128).y, hh = Chef.w * .37;
         for (let i = items.length - 1; i >= 0; i--) {
           const it = items[i];
@@ -1755,7 +1932,7 @@ const Snd = (() => {
       if (res.win) break;
       Drg.force('angry'); Drg.fx('hurt'); SFX.snort(); nostrils('smoke', 3);
       await sleep(700);
-      await fail(`Naganya masih cemberut 😤 — gelitikanmu belum pas iramanya (Rage Meter <b>${Math.round(res.rage)}</b>, perlu ≤ 40). Tunggu ✦ benar-benar masuk lingkaran, jangan buru-buru!`);
+      await fail(`Naganya masih cemberut 😤 Rage <b>${Math.round(res.rage)}</b>, perlu ≤ 40. Tunggu ✦ masuk lingkaran, jangan buru-buru!`);
       setRage(100); Drg.force('angry'); Drg.set(null, 'cross'); HUD.score(total());
     }
     [R2.lane, R2.ring, R2.hint, R2.combo].forEach(e => e && e.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 400, fill: 'forwards' }));
@@ -1808,7 +1985,7 @@ const Snd = (() => {
           R2.ring.classList.remove('hit', 'perfect', 'miss'); void R2.ring.offsetWidth; R2.ring.classList.add(kind === 'perfect' ? 'perfect' : 'hit');
           pop(ringPt.x + 34, ringPt.y - 60, kind === 'perfect' ? 'PERFECT +' + pts : 'GOOD +' + pts, kind === 'perfect' ? 'gold' : 'green', { dur: 700, dy: -30 });
           const c = chinPt(); hearts(c.x, c.y, kind === 'perfect' ? 5 : 3, 50);
-          kind === 'perfect' ? SFX.giggle() : SFX.good();
+          kind === 'perfect' ? SFX.giggle() : SFX.good(); if (st.combo === 5 || st.combo === 12) Orbi.react('Ritmenya dapet banget! 🎶', 'grin');
           if (st.rage > 0 || !n.final) Drg.flash('giggle', 380); Drg.fx('wiggle', 500);
           if (n.el) { n.el.animate([{ transform: n.el.style.transform + ' scale(1)', opacity: 1 }, { transform: n.el.style.transform + ' scale(2)', opacity: 0 }], { duration: 250, fill: 'forwards' }).onfinish = () => n.el && n.el.remove(); }
           if (n.final) { flashWord('FINAL TAP!', 1000, 50); sparks(c.x, c.y, 14, 110); SFX.combo(4); }
@@ -1816,7 +1993,7 @@ const Snd = (() => {
           st.combo = 0; st.miss++; st.rage = Math.min(100, st.rage + 3);
           R2.ring.classList.remove('hit', 'perfect', 'miss'); void R2.ring.offsetWidth; R2.ring.classList.add('miss');
           pop(ringPt.x + 30, ringPt.y - 60, kind === 'early' ? 'Kecepetan!' : 'Telat!', 'bad', { dur: 700, dy: -30 });
-          SFX.snort(); nostrils(st.rage > 45 ? 'smoke' : 'steam'); Drg.flash(st.rage > 50 ? 'angry' : 'annoyed', 450);
+          SFX.snort(); nostrils(st.rage > 45 ? 'smoke' : 'steam'); Drg.flash(st.rage > 50 ? 'angry' : 'annoyed', 450); Orbi.react('Sabar... tunggu ✦ masuk lingkaran', 'worry');
           if (n.el) n.el.classList.add('gone');
         }
         setRage(st.rage); moodByRage2(st.rage); showCombo();
@@ -1889,6 +2066,7 @@ const Snd = (() => {
     M3.slots = [0, 1, 2].map(i => h('div', 'slot', `<div class="fr"><span class="num">${i + 1}</span></div><div class="cw">${ART.cauldron()}</div>`, props));
     M3.shelf = h('div', 'shelf', '', props);
     M3.ptimer = h('div', 'ptimer', '', props); M3.ptimer.style.opacity = 0;
+    M3.hint = h('button', 'ohb', '💡 Minta Orbi', props);
     LAYOUTS.mg3();
   }
   function setOrder(R) {
@@ -1913,12 +2091,11 @@ const Snd = (() => {
         const res = await playRound(r, extra, st);
         if (res) break;
         st.retries++; extra = Math.min(extra + 1.5, 4.5);
-        const md = modal(`<div class="face">${miniDragon('pout')}</div><h2>Waktu habis!</h2><p style="margin-top:6px">Naganya makin manyun 😤 Ayo ulangi pesanan <b>${ROUNDS[r].name}</b>. Waktumu ditambah <b>+${extra.toLocaleString('id-ID')} detik</b>.</p><button class="btn">↺ Ulangi Pesanan</button>`);
-        await clickOnce(md.p.querySelector('.btn')); await md.close();
+        await Orbi.say([{ t: `Yah, waktu abis! Naganya makin manyun 😤 Tenang, waktu ditambah <b>+${extra.toLocaleString('id-ID')} detik</b>.`, m: 'worry' }], { btn: '↺ Ulangi Pesanan' });
       }
     }
     G.score[2] = st.score;
-    const bad = st.errors + st.retries * 2;
+    const bad = st.errors + st.retries * 2 + (st.hints || 0);
     G.stars[2] = bad === 0 ? 3 : bad <= 3 ? 2 : 1;
     HUD.score(total());
     /* hadiah permata */
@@ -1966,6 +2143,14 @@ const Snd = (() => {
       HUD.time(T, T, !!R.kilat);
       Drg.force(ri === 0 ? 'pout' : 'smile'); Drg.set(null, ri === 0 ? 'cross' : 'rest');
       M3.ptimer.textContent = `PESANAN ${ri + 1}/3`; M3.ptimer.style.opacity = 1;
+      let hinted = false; M3.hint.style.opacity = 1;
+      M3.hint.onclick = e => {
+        e.stopPropagation(); if (!active || hinted) return; hinted = true; M3.hint.style.opacity = .35;
+        const k = R.rec.find(x => !placed.includes(x)), c = cards.find(x => x.dataset.k === k); if (!c) return;
+        c.classList.add('hint'); setTimeout(() => c.classList.remove('hint'), 2400);
+        st.score = Math.max(0, st.score - 50); st.hints = (st.hints || 0) + 1; HUD.score(total() + st.score);
+        Orbi.last = 0; Orbi.react('Coba yang ini deh! 😉', 'grin');
+      };
 
       /* --- interaksi --- */
       const firstEmpty = () => M3.slots.findIndex(s => !s.classList.contains('filled'));
@@ -1991,7 +2176,7 @@ const Snd = (() => {
           SFX.wrong(); card.classList.remove('no'); void card.offsetWidth; card.classList.add('no'); setTimeout(() => card.classList.remove('no'), 450);
           slot.classList.remove('bad'); void slot.offsetWidth; slot.classList.add('bad'); setTimeout(() => slot.classList.remove('bad'), 450);
           pop(sr.x + sr.w / 2, sr.y - 6, placed.includes(k) ? 'Sudah ada!' : 'Bukan itu!', 'bad', { dur: 800, dy: -26 });
-          Drg.flash('annoyed', 600); nostrils('steam'); SFX.snort();
+          Drg.flash('annoyed', 600); nostrils('steam'); SFX.snort(); Orbi.react('Itu pengecoh! Cek pesanan lagi', 'worry');
         }
       }
       let drag = null;
@@ -2109,9 +2294,10 @@ const Snd = (() => {
     confetti(80);
     sendLMS();
     const tot = total();
+    await Orbi.say([{ t: `Naga udah tenang, perut kenyang, dapur istana aman! 🐉💜`, m: 'cheer' }, `Kamu bukan cuma jago nangkep. Kamu jago <b>ngademin situasi panas</b>.`, { t: `Makasih udah bantuin, <b>${NM()}</b>! Sampai ketemu lagi 👋`, m: 'grin' }], { btn: 'Lihat Hasil ▶', dim: false });
     const md = modal(`<div class="final"><div class="fhead"><div class="gemwrap">${ART.gem()}</div><div><span class="tag green">MISI TUNTAS!</span>
       <h2>Kamu Aman, Chef ${NM()}!</h2></div></div>
-      <p>Naga sudah tenang, perutnya kenyang, dan dapur istana selamat. Urusan selesai! 🐉💜</p>
+      <p>“Bangga banget sama kamu!” — Orbi 🪨💜</p>
       <div class="tot">TOTAL SKOR <b>${fmt(tot)}</b></div>
       <div class="blist">${[0, 1, 2].map(i => `<div class="bi"><div class="badgeimg">${ART.badge(LESSONS[i].icon())}</div><b>${LESSONS[i].title}</b>${starsHTML(G.stars[i], .3 + i * .3)}<small>${fmt(G.score[i])} poin</small></div>`).join('')}</div>
       <div class="recap"><h4>3 Jurus Meredam "Naga" di Tempat Kerja</h4>
